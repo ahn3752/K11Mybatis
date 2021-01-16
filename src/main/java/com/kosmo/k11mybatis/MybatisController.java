@@ -243,7 +243,7 @@ public class MybatisController {
 		
 		return "redirect:list.do";
 	}
-	
+
 
 }
 

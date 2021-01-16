@@ -81,5 +81,19 @@ Spring에서 Mybatis 사용하기 위한 절차
 		</a>
 	
 	</li>
+	
+	<h2>방명록+ JSON+jQuery Ajax 연동 제작</h2>
+	<a href="mybatisJSON/list.do" target="_blank">
+		한줄게시판 바로가기
+	
+	</a>
+	
 </body>
 </html>
+
+
+
+
+
+
+

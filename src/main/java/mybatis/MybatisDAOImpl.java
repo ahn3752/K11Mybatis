@@ -36,6 +36,6 @@ public interface MybatisDAOImpl {
 	 */
 	public int modify(MyBoardDTO myBoardDTO);
 	
-	public void delete(String idx, String id);
+	public int delete(String idx, String id);
 	
 }

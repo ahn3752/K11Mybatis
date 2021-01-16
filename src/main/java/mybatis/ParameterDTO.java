@@ -44,8 +44,8 @@ public class ParameterDTO {
 	public ArrayList<String> getSearchTxt() {
 		return searchTxt;
 	}
-	public void setSearchTxt(ArrayList<String> searchTxt) {
-		this.searchTxt = searchTxt;
+	public void setSearchTxt(ArrayList<String> string) {
+		this.searchTxt = string;
 	}
 
 	public int getStart() {
