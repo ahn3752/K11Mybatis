@@ -3,7 +3,29 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <script>
-
+function paging(pNum){
+	$.ajax({
+		url : "./aList.do",
+		type : "get",
+		contentType : "text/html;charset:utf-8",
+		data : { nowPage : pNum},
+		dataType : "html",
+		success : function(d){
+			
+			$('#boardHTML').html('');
+			$('#boardHTML')
+				.append('<div style="text-align:center;padding-top:50px;">')
+				.append('<img src="../images/loading02.gif">')
+				.append('</div>');
+			
+			$('#boardHTML').html(d);
+			
+		},
+		error : function(e){
+			alert("실패"+e);
+		}
+	});
+}
 
 $(function(){
    

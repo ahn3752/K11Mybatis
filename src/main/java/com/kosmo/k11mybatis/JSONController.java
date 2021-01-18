@@ -93,14 +93,14 @@ public class JSONController {
       System.out.println("sql="+sql);
       
       //페이지 번호 처리
-		/*
-		 * String pagingImg = PagingUtil.pagingImg(totalRecordCount, pageSize,
-		 * blockPage, nowPage, req.getContextPath()+"/mybatis/list.do?");
-		 * model.addAttribute("pagingImg", pagingImg);
-		 */
-      String pagingImg = 
-              PagingUtil.pagingImg(totalRecordCount, pageSize, blockPage,
-                    nowPage, req.getContextPath()+"/mybatis/list.do?");
+		
+		  String pagingImg = PagingUtil.pagingAjax(totalRecordCount, pageSize,
+		  blockPage, nowPage, req.getContextPath()+"/mybatis/list.do?");
+		  model.addAttribute("pagingImg", pagingImg);
+			/*
+			 * String pagingImg = PagingUtil.pagingImg(totalRecordCount, pageSize,
+			 * blockPage, nowPage, req.getContextPath()+"/mybatis/list.do?");
+			 */
         model.addAttribute("pagingImg", pagingImg);
       //게시물의 줄바꿈 처리
       for(MyBoardDTO dto : lists) {
